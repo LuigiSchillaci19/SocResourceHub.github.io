@@ -71,6 +71,52 @@ export const allCategories: CategoryProps[] = [
     ]
   },
   {
+    title: "Email Analysis",
+    icon: "ri-mail-open-line",
+    borderColor: "border-warning",
+    sections: [
+      {
+        title: "Phishing Analysis",
+        tools: [
+          { name: "PhishTool", url: "https://www.phishtool.com" },
+          { name: "PhishTank", url: "https://phishtank.org" },
+          { name: "URLScan.io", url: "https://urlscan.io" }
+        ]
+      },
+      {
+        title: "Email Headers",
+        tools: [
+          { name: "MXToolbox", url: "https://mxtoolbox.com/EmailHeaders.aspx" },
+          { name: "Message Header Analyzer", url: "https://mha.azurewebsites.net" },
+          { name: "IPInfo", url: "https://ipinfo.io" }
+        ]
+      },
+      {
+        title: "Document Analysis",
+        tools: [
+          { name: "Malware Analysis Online", url: "https://malwareanalysis.online" },
+          { name: "OLEVBA", url: "https://github.com/decalage2/oletools/wiki/olevba" },
+          { name: "PDF Examiner", url: "https://www.pdfexaminer.com" }
+        ]
+      },
+      {
+        title: "Resources",
+        tools: [
+          { 
+            name: "Email Analysis Workflow", 
+            url: "https://www.sans.org/blog/email-analysis-workflow/",
+            icon: "ri-book-2-line"
+          },
+          { 
+            name: "Malicious Document Analysis", 
+            url: "https://github.com/rshipp/awesome-malware-analysis#documents-and-shellcode",
+            icon: "ri-book-2-line"
+          }
+        ]
+      }
+    ]
+  },
+  {
     title: "Threat Hunting",
     icon: "ri-radar-line",
     borderColor: "border-secondary",
@@ -81,6 +127,14 @@ export const allCategories: CategoryProps[] = [
           { name: "Elastic SIEM", url: "https://www.elastic.co/security" },
           { name: "Splunk ES", url: "https://www.splunk.com/en_us/cybersecurity.html" },
           { name: "TH Playbook", url: "https://github.com/OTRF/ThreatHunter-Playbook" }
+        ]
+      },
+      {
+        title: "SIEM Rule Creation",
+        tools: [
+          { name: "Sigma Rules", url: "https://github.com/SigmaHQ/sigma" },
+          { name: "SOC Prime", url: "https://socprime.com/search-engine" },
+          { name: "Elastic Rule Creator", url: "https://github.com/elastic/detection-rules" }
         ]
       },
       {
@@ -95,8 +149,8 @@ export const allCategories: CategoryProps[] = [
         title: "Behavioral Analysis",
         tools: [
           { name: "MITRE ATT&CK", url: "https://attack.mitre.org" },
-          { name: "Sigma Rules", url: "https://github.com/Neo23x0/sigma" },
-          { name: "SigmaHQ", url: "https://github.com/SigmaHQ/sigma" }
+          { name: "Atomic Red Team", url: "https://github.com/redcanaryco/atomic-red-team" },
+          { name: "Uncoder.IO", url: "https://uncoder.io" }
         ]
       },
       {
@@ -108,8 +162,8 @@ export const allCategories: CategoryProps[] = [
             icon: "ri-book-2-line"
           },
           { 
-            name: "Windows Security Resources", 
-            url: "https://github.com/jaredcatkinson/awesome-windows-security",
+            name: "Threat Hunting Rules", 
+            url: "https://github.com/ThreatHuntingProject/ThreatHunting",
             icon: "ri-book-2-line"
           }
         ]
@@ -157,6 +211,11 @@ export const allCategories: CategoryProps[] = [
             name: "MISP Platform", 
             url: "https://github.com/MISP/MISP",
             icon: "ri-bubble-chart-line"
+          },
+          {
+            name: "ThreatConnect",
+            url: "https://threatconnect.com",
+            icon: "ri-shield-keyhole-line"
           }
         ]
       }
@@ -172,7 +231,7 @@ export const allCategories: CategoryProps[] = [
         tools: [
           { name: "DIE", url: "https://github.com/horsicq/Detect-It-Easy" },
           { name: "PEStudio", url: "https://www.winitor.com" },
-          { name: "FLOSS", url: "https://github.com/fireeye/flare-floss" }
+          { name: "FLARE VM", url: "https://github.com/mandiant/flare-vm" }
         ]
       },
       {
@@ -180,7 +239,15 @@ export const allCategories: CategoryProps[] = [
         tools: [
           { name: "Cuckoo", url: "https://github.com/cuckoosandbox/cuckoo" },
           { name: "Triage", url: "https://tria.ge" },
-          { name: "CAPE", url: "https://cape.contextis.com" }
+          { name: "Joe Sandbox", url: "https://www.joesandbox.com" }
+        ]
+      },
+      {
+        title: "Document Analysis",
+        tools: [
+          { name: "Oletools", url: "https://github.com/decalage2/oletools" },
+          { name: "PDFExaminer", url: "https://www.pdfexaminer.com" },
+          { name: "XLMMacroDeobfuscator", url: "https://github.com/DissectMalware/XLMMacroDeobfuscator" }
         ]
       },
       {
@@ -200,8 +267,8 @@ export const allCategories: CategoryProps[] = [
             icon: "ri-book-2-line"
           },
           { 
-            name: "Malware Unicorn Workshops", 
-            url: "https://malwareunicorn.org/#/workshops",
+            name: "Malware Traffic Analysis", 
+            url: "https://www.malware-traffic-analysis.net",
             icon: "ri-book-2-line"
           }
         ]
@@ -225,16 +292,24 @@ export const allCategories: CategoryProps[] = [
         title: "IR Tools",
         tools: [
           { name: "GRR", url: "https://github.com/google/grr" },
-          { name: "The HELK", url: "https://thehelk.com/deployment.html" },
-          { name: "BriMor LRC", url: "https://www.brimorlabsblog.com/2019/04/live-response-collection-cedarpelta.html" }
+          { name: "The HELK", url: "https://github.com/Cyb3rWard0g/HELK" },
+          { name: "DFIR-ORC", url: "https://github.com/dfir-orc/dfir-orc" }
         ]
       },
       {
         title: "Containment & Remediation",
         tools: [
-          { name: "Autoruns", url: "https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns" },
-          { name: "Sysmon", url: "https://github.com/ion-storm/sysmon-config" },
+          { name: "Autoruns", url: "https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns" },
+          { name: "Sysmon", url: "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon" },
           { name: "PowerSponse", url: "https://github.com/swisscom/PowerSponse" }
+        ]
+      },
+      {
+        title: "Alert Rule Creation",
+        tools: [
+          { name: "Sigma Rules", url: "https://github.com/SigmaHQ/sigma/tree/master/rules" },
+          { name: "Detection Lab", url: "https://github.com/Security-Onion-Solutions/securityonion" },
+          { name: "Splunk Security Content", url: "https://github.com/splunk/security_content" }
         ]
       },
       {
@@ -279,8 +354,8 @@ export const allCategories: CategoryProps[] = [
         title: "Patch Management",
         tools: [
           { name: "Ivanti", url: "https://www.ivanti.com/products/patch-management" },
-          { name: "SCCM", url: "https://docs.microsoft.com/en-us/mem/configmgr/sum/understand/software-updates-introduction" },
-          { name: "Patch Mgmt.org", url: "https://www.patchmanagement.org" }
+          { name: "SCCM", url: "https://learn.microsoft.com/en-us/mem/configmgr/sum/understand/software-updates-introduction" },
+          { name: "Patchman", url: "https://patchman.co" }
         ]
       },
       {
@@ -294,6 +369,52 @@ export const allCategories: CategoryProps[] = [
           { 
             name: "SANS VM Process", 
             url: "https://www.sans.org/blog/vulnerability-management-process-overview/",
+            icon: "ri-book-2-line"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "SIEM Rules & Alerting",
+    icon: "ri-alarm-warning-line",
+    borderColor: "border-warning",
+    sections: [
+      {
+        title: "Rule Creation",
+        tools: [
+          { name: "Sigma Rules", url: "https://github.com/SigmaHQ/sigma" },
+          { name: "SOC Prime", url: "https://socprime.com/search-engine" },
+          { name: "Uncoder.IO", url: "https://uncoder.io" }
+        ]
+      },
+      {
+        title: "SIEM Platforms",
+        tools: [
+          { name: "Splunk", url: "https://www.splunk.com/en_us/download/splunk-enterprise.html" },
+          { name: "Elastic SIEM", url: "https://www.elastic.co/security" },
+          { name: "Graylog", url: "https://www.graylog.org" }
+        ]
+      },
+      {
+        title: "SOAR Integrations",
+        tools: [
+          { name: "Tines", url: "https://www.tines.com" },
+          { name: "Cortex XSOAR", url: "https://www.paloaltonetworks.com/cortex/cortex-xsoar" },
+          { name: "TheHive", url: "https://thehive-project.org" }
+        ]
+      },
+      {
+        title: "Documentation",
+        tools: [
+          { 
+            name: "Sigma Wiki", 
+            url: "https://github.com/SigmaHQ/sigma/wiki",
+            icon: "ri-book-2-line"
+          },
+          { 
+            name: "Detection Engineering", 
+            url: "https://github.com/infosecB/awesome-detection-engineering",
             icon: "ri-book-2-line"
           }
         ]
