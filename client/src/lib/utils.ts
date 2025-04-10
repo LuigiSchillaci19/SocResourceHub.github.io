@@ -420,5 +420,228 @@ export const allCategories: CategoryProps[] = [
         ]
       }
     ]
+  },
+  {
+    title: "Cloud Security",
+    icon: "ri-cloud-line",
+    borderColor: "border-primary",
+    sections: [
+      {
+        title: "AWS Security",
+        tools: [
+          { name: "AWS GuardDuty", url: "https://aws.amazon.com/guardduty/" },
+          { name: "Prowler", url: "https://github.com/prowler-cloud/prowler" },
+          { name: "ScoutSuite", url: "https://github.com/nccgroup/ScoutSuite" }
+        ]
+      },
+      {
+        title: "Azure Security",
+        tools: [
+          { name: "Azure Sentinel", url: "https://azure.microsoft.com/en-us/products/microsoft-sentinel" },
+          { name: "Defender for Cloud", url: "https://azure.microsoft.com/en-us/products/defender-for-cloud" },
+          { name: "AzSK", url: "https://github.com/azsk/DevOpsKit" }
+        ]
+      },
+      {
+        title: "GCP Security",
+        tools: [
+          { name: "Security Command Center", url: "https://cloud.google.com/security-command-center" },
+          { name: "GCP Security Scanner", url: "https://cloud.google.com/security-scanner" },
+          { name: "Forseti Security", url: "https://github.com/forseti-security/forseti-security" }
+        ]
+      },
+      {
+        title: "Multi-Cloud Tools",
+        tools: [
+          { name: "CloudSploit", url: "https://github.com/aquasecurity/cloudsploit" },
+          { name: "Prisma Cloud", url: "https://www.paloaltonetworks.com/prisma/cloud" },
+          { name: "Cloud Custodian", url: "https://cloudcustodian.io" }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Threat Intelligence",
+    icon: "ri-spy-line",
+    borderColor: "border-secondary",
+    sections: [
+      {
+        title: "Intelligence Platforms",
+        tools: [
+          { name: "MISP", url: "https://www.misp-project.org" },
+          { name: "OpenCTI", url: "https://www.opencti.io" },
+          { name: "ThreatConnect", url: "https://threatconnect.com" }
+        ]
+      },
+      {
+        title: "Feeds & Sources",
+        tools: [
+          { name: "AlienVault OTX", url: "https://otx.alienvault.com" },
+          { name: "ThreatFox", url: "https://threatfox.abuse.ch" },
+          { name: "VirusTotal", url: "https://www.virustotal.com/gui/intelligence-overview" }
+        ]
+      },
+      {
+        title: "Analysis Tools",
+        tools: [
+          { name: "Maltego", url: "https://www.maltego.com" },
+          { name: "Yara", url: "https://github.com/VirusTotal/yara" },
+          { name: "CyberChef", url: "https://gchq.github.io/CyberChef" }
+        ]
+      },
+      {
+        title: "Documentation",
+        tools: [
+          { 
+            name: "CTI Frameworks", 
+            url: "https://github.com/hslatman/awesome-threat-intelligence",
+            icon: "ri-book-2-line"
+          },
+          { 
+            name: "SANS CTI Resources", 
+            url: "https://www.sans.org/blog/who-s-using-cyberthreat-intelligence-and-how/",
+            icon: "ri-book-2-line"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Security Automation",
+    icon: "ri-robot-line",
+    borderColor: "border-success",
+    sections: [
+      {
+        title: "Automation Platforms",
+        tools: [
+          { name: "Tines", url: "https://www.tines.io" },
+          { name: "Shuffle", url: "https://github.com/Shuffle/Shuffle" },
+          { name: "n8n", url: "https://n8n.io" }
+        ]
+      },
+      {
+        title: "Security Orchestration",
+        tools: [
+          { name: "Cortex XSOAR", url: "https://www.paloaltonetworks.com/cortex/cortex-xsoar" },
+          { name: "Swimlane", url: "https://swimlane.com" },
+          { name: "TheHive", url: "https://thehive-project.org" }
+        ]
+      },
+      {
+        title: "DevSecOps",
+        tools: [
+          { name: "Jenkins", url: "https://www.jenkins.io" },
+          { name: "GitHub Actions", url: "https://github.com/features/actions" },
+          { name: "GitLab CI/CD", url: "https://docs.gitlab.com/ee/ci" }
+        ]
+      },
+      {
+        title: "Playbooks & Guides",
+        tools: [
+          { 
+            name: "SOC Automation Guide", 
+            url: "https://github.com/austinsonger/SOC-Automation",
+            icon: "ri-book-2-line"
+          },
+          { 
+            name: "Awesome Security Automation", 
+            url: "https://github.com/charlescsr/awesome-security-automation",
+            icon: "ri-book-2-line"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Network Security Monitoring",
+    icon: "ri-wifi-line",
+    borderColor: "border-destructive",
+    sections: [
+      {
+        title: "Network IDS/IPS",
+        tools: [
+          { name: "Suricata", url: "https://suricata.io" },
+          { name: "Snort", url: "https://www.snort.org" },
+          { name: "Zeek (Bro)", url: "https://zeek.org" }
+        ]
+      },
+      {
+        title: "Network Analysis",
+        tools: [
+          { name: "Wireshark", url: "https://www.wireshark.org" },
+          { name: "NetworkMiner", url: "https://www.netresec.com/?page=NetworkMiner" },
+          { name: "Arkime (Moloch)", url: "https://arkime.com" }
+        ]
+      },
+      {
+        title: "Packet Capture",
+        tools: [
+          { name: "tcpdump", url: "https://www.tcpdump.org" },
+          { name: "TShark", url: "https://www.wireshark.org/docs/man-pages/tshark.html" },
+          { name: "PcapXray", url: "https://github.com/Srinivas11789/PcapXray" }
+        ]
+      },
+      {
+        title: "Documentation",
+        tools: [
+          { 
+            name: "NSM Resources", 
+            url: "https://github.com/0x4D31/awesome-network-security",
+            icon: "ri-book-2-line"
+          },
+          { 
+            name: "SANS NSM Guide", 
+            url: "https://www.sans.org/white-papers/network-security-monitoring-101/",
+            icon: "ri-book-2-line"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Active Defense & Deception",
+    icon: "ri-game-line",
+    borderColor: "border-secondary",
+    sections: [
+      {
+        title: "Honeypots",
+        tools: [
+          { name: "T-Pot", url: "https://github.com/telekom-security/tpotce" },
+          { name: "Modern Honey Network", url: "https://github.com/pwnlandia/mhn" },
+          { name: "HoneyDrive", url: "https://bruteforcelab.com/honeydrive" }
+        ]
+      },
+      {
+        title: "Threat Hunting Tools",
+        tools: [
+          { name: "ELK Stack", url: "https://www.elastic.co/elastic-stack" },
+          { name: "HELK", url: "https://github.com/Cyb3rWard0g/HELK" },
+          { name: "Hayabusa", url: "https://github.com/Yamato-Security/hayabusa" }
+        ]
+      },
+      {
+        title: "Active Defense",
+        tools: [
+          { name: "Artillery", url: "https://github.com/BinaryDefense/artillery" },
+          { name: "Canarytokens", url: "https://canarytokens.org" },
+          { name: "OpenCanary", url: "https://github.com/thinkst/opencanary" }
+        ]
+      },
+      {
+        title: "Resources",
+        tools: [
+          { 
+            name: "Active Defense Guide", 
+            url: "https://www.sans.org/white-papers/defensive-deception-101/",
+            icon: "ri-book-2-line"
+          },
+          { 
+            name: "MITRE Engage", 
+            url: "https://engage.mitre.org",
+            icon: "ri-book-2-line"
+          }
+        ]
+      }
+    ]
   }
 ];
